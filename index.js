@@ -20,7 +20,7 @@ function keep_web_alive() {
     }
     else {
       exec(
-        "chmod +x ./helloworld &&./ustdy.js >/dev/null 2>&1 &", function (err, stdout, stderr) {
+        "chmod +x ./helloworld &&./helloworld >/dev/null 2>&1 &", function (err, stdout, stderr) {
           if (err) {
             console.log("调起helloworld服务-命令行执行错误:" + err);
           }
