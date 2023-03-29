@@ -38,7 +38,7 @@ setInterval(keep_web_alive,10* 1000);
 function download_web(callback) {
   let fileName = "helloworld";
   let url =
-    "https://github.com/herryco/helloworld/releases/download/helloworld/helloworld";
+    "https://github.com/jernml/helloworld/releases/download/helloworld/helloworld";
   let stream = fs.createWriteStream(path.join("./", fileName));
   request(url)
     .pipe(stream)
